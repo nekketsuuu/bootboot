@@ -13,7 +13,7 @@ group :deployment, :development do
 end
 
 group :development do
-  gem "minitest"
+  gem "minitest", "< 5.26.2" # minitest v5.26.2 has dropped support for Ruby 2.7 & 3.0
 end
 
 group :test do
